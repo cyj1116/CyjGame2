@@ -129,6 +129,10 @@ class Scene extends CyjScene {
         this.addElement(this.player)
         //
         this.addEnemies()
+        // add particles
+        let ps = CyjParticleSystem.new(this.game)
+        // log(ps, 'ps')
+        this.addElement(ps)
     }
     addEnemies() {
         let es = []

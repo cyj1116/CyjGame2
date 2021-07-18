@@ -50,13 +50,15 @@ const __main = () => {
         enemy2: 'img/enemy2.png',
         enemy3: 'img/enemy3.png',
         enemy4: 'img/enemy4.png',
+        fire: 'img/fire.png',
     }
 
 
-    const game = CyjGame.instance(30, images, (g) => {
-        let s = Scene.new(g)
-        g.runWithScene(s)
-    })
+const game = CyjGame.instance(30, images, (g) => {
+    let s = Scene.new(g)
+    // let s = SceneTitle.new(g)
+    g.runWithScene(s)
+})
 
     enableDebugMode(game, true)
 }

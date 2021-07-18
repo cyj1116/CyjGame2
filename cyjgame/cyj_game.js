@@ -41,7 +41,6 @@ class CyjGame {
     }
     // 递归 动态调试
     runLoop = () => {
-        log(window.fps, 'window.fps')
         // events
         let actions = Object.keys(this.actions)
         for (let i = 0; i < actions.length; i++) {
