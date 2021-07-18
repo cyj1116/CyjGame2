@@ -4,6 +4,7 @@ const config = {
     enemy_speed: 5,
     bullet_speed: 5,
     fire_cooldown: 9,
+    fps: window.fps,
 }
 
 class Bullet extends CyjImage {

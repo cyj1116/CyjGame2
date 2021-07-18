@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbcc7fdd-10aa-4c85-ac8c-9524a78db042" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cyjgame/cyj_particle_system.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/fire.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cyjgame/cyj_game.js" beforeDir="false" afterPath="$PROJECT_DIR$/cyjgame/cyj_game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cyjgame/cyj_image.js" beforeDir="false" afterPath="$PROJECT_DIR$/cyjgame/cyj_image.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cyjgame/cyj_scene.js" beforeDir="false" afterPath="$PROJECT_DIR$/cyjgame/cyj_scene.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scene/main/scene.js" beforeDir="false" afterPath="$PROJECT_DIR$/scene/main/scene.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scene/title/scene_title.js" beforeDir="false" afterPath="$PROJECT_DIR$/scene/title/scene_title.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +29,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../CyjGame1" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="JavaScript Debug.game.html">
@@ -61,7 +56,8 @@
       <updated>1626508422567</updated>
       <workItem from="1626508423841" duration="17640000" />
       <workItem from="1626530983825" duration="368000" />
-      <workItem from="1626593211338" duration="14477000" />
+      <workItem from="1626593211338" duration="14589000" />
+      <workItem from="1626617064148" duration="619000" />
     </task>
     <servers />
   </component>

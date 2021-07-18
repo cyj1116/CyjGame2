@@ -31,9 +31,21 @@
 <body>
     <canvas id="id-canvas" width="400" height="600"></canvas>
     <hr>
-    <input id="id-input-speed" type="range" value="1">
+<!--    <input class="cyj-auto-slider" id="id-input-speed" type="range" value="1" data-value="config.fps">-->
+<!--     <span class="cyj-label"></span>-->
     <div>
 <!--        <textarea name="" id="id-text-log" cols="54" rows="20"></textarea>-->
+    </div>
+    <div>
+        <label>
+            <input class="cyj-auto-slider"
+                   id="id-input-speed"
+                   type="range"
+                   value="1"
+                   data-value="config.fps"
+            >
+            帧数: <span class="cyj-label"></span>
+        </label>
     </div>
     <div>
         <label>
