@@ -3,16 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dbcc7fdd-10aa-4c85-ac8c-9524a78db042" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cyjgame/cyj_game.js" beforeDir="false" afterPath="$PROJECT_DIR$/cyjgame/cyj_game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cyjgame/cyj_scene.js" beforeDir="false" afterPath="$PROJECT_DIR$/cyjgame/cyj_scene.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/block-yellow.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/enemy0.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/img/enemy0.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/enemy1.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/img/enemy1.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/enemy2.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/img/enemy2.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/enemy3.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/img/enemy3.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/player.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/player.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/sky.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/sky.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyjgame/cyj_image.js" beforeDir="false" afterPath="$PROJECT_DIR$/cyjgame/cyj_image.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scene/main/scene.js" beforeDir="false" afterPath="$PROJECT_DIR$/scene/main/scene.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +51,7 @@
       <updated>1626508422567</updated>
       <workItem from="1626508423841" duration="17640000" />
       <workItem from="1626530983825" duration="368000" />
-      <workItem from="1626593211338" duration="3331000" />
+      <workItem from="1626593211338" duration="3720000" />
     </task>
     <servers />
   </component>

@@ -25,8 +25,9 @@ class Bullet extends CyjImage {
 
 class Player extends CyjImage {
     constructor(game) {
-        super(game, 'player');
+        super(game, 'player', 0.5);
         this.setup()
+
     }
     setup() {
         this.speed = 5

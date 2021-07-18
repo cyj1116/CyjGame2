@@ -64,10 +64,7 @@ class CyjGame {
     }
 
     textureByName = (name) => {
-        // log(g.images, 'g.images')
-        log(name, 'name')
         let img = this.images[name]
-        log(img, 'img')
         // let image = {
         //     w: img.width,
         //     h: img.height,
