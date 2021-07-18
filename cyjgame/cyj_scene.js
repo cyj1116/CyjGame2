@@ -25,7 +25,10 @@ class CyjScene {
                 e.debug && e.debug()
             }
         }
-
+        for (let i = 0; i < this.elements.length; i++) {
+            const e = this.elements[i];
+            e.update()
+        }
     }
 }
 

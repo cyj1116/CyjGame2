@@ -12,11 +12,14 @@ class Bullet extends CyjImage {
         this.setup()
     }
     setup() {
-        // this.speed = 15
-        this.speed = config.bullet_speed
+        this.speed = 15
+        // this.speed = config.bullet_speed
     }
     update() {
         this.y -= this.speed
+    }
+    debug() {
+        this.speed = config.bullet_speed
     }
 }
 
@@ -26,11 +29,11 @@ class Player extends CyjImage {
         this.setup()
     }
     setup() {
-        this.speed = 10
+        this.speed = 5
         this.cooldown = 0
     }
     update() {
-        this.speed = config.player_speed
+        // this.speed = config.player_speed
         if (this.cooldown > 0) {
             this.cooldown--
         }
@@ -57,6 +60,9 @@ class Player extends CyjImage {
     }
     moveDown() {
         this.y += this.speed
+    }
+    debug() {
+        this.speed = config.player_speed
     }
 }
 
@@ -98,7 +104,6 @@ class Cloud extends CyjImage {
     }
     debug() {
         this.speed = config.cloud_speed
-
     }
 }
 
@@ -128,7 +133,7 @@ class Scene extends CyjScene {
         let es = []
         for (let i = 0; i < this.numberOfEnemies; i++) {
             log('loop')
-            const e = new Enemy(this.game, 'enemy');
+            const e = Enemy.new(this.game, 'enemy');
             es.push(e)
             this.addElement(e)
         }
@@ -157,6 +162,6 @@ class Scene extends CyjScene {
 
     update() {
         super.update()
-        this.cloud.y += 1
+        // this.cloud.y += 1
     }
 }
