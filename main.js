@@ -54,7 +54,7 @@ const __main = () => {
     }
 
 
-const game = CyjGame.instance(30, images, (g) => {
+const game = CyjGame.instance(60, images, (g) => {
     let s = Scene.new(g)
     // let s = SceneTitle.new(g)
     g.runWithScene(s)
