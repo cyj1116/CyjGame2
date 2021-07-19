@@ -6,6 +6,7 @@ class Bullet extends CyjImage {
     setup() {
         this.speed = 15
         // this.speed = config.bullet_speed
+
     }
     update() {
         this.y -= this.speed

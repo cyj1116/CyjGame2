@@ -41,7 +41,7 @@ class CyjGame {
     }
     // 递归 动态调试
     runLoop = () => {
-        log(window.fps, 'window.fps')
+        // log(window.fps, 'window.fps')
         // events
         let actions = Object.keys(this.actions)
         for (let i = 0; i < actions.length; i++) {
@@ -93,7 +93,7 @@ class CyjGame {
         //
         let loads = []
         // 预先载入所有图片
-        log(this.images, 'this.images')
+        // log(this.images, 'this.images')
         let names = Object.keys(this.images)
         for (let i = 0; i < names.length; i++) {
             const name = names[i];

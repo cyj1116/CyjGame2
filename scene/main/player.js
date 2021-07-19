@@ -13,16 +13,23 @@ class Player extends CyjImage {
         if (this.cooldown > 0) {
             this.cooldown--
         }
+
     }
     fire() {
         if (this.cooldown === 0) {
             this.cooldown = config.fire_cooldown
             let x = this.x + this.w / 2
             let y = this.y
-            let b = Bullet.new(this.game)
-            b.x = x
-            b.y = y
-            this.scene.addElement(b)
+            this.b = Bullet.new(this.game)
+            // log(b, 'b')
+            this.b.x = x
+            this.b.y = y
+            this.scene.addElement(this.b)
+            // log(this.b, 'b')
+            // log(this.scene, 'this.scene')
+            // if (this.b.y === 0) {
+            //     this.scene.elements.removeElement(this.b)
+            // }
         }
     }
     moveLeft() {

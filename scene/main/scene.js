@@ -2,112 +2,10 @@ const config = {
     player_speed: 10,
     cloud_speed: 1,
     enemy_speed: 5,
-    bullet_speed: 5,
+    bullet_speed: 6,
     fire_cooldown: 9,
     fps: window.fps,
 }
-
-// class Bullet extends CyjImage {
-//     constructor(game) {
-//         super(game, 'bullet');
-//         this.setup()
-//     }
-//     setup() {
-//         this.speed = 15
-//         // this.speed = config.bullet_speed
-//     }
-//     update() {
-//         this.y -= this.speed
-//     }
-//     debug() {
-//         this.speed = config.bullet_speed
-//     }
-// }
-
-// class Enemy extends CyjImage {
-//     constructor(game) {
-//         let type = randomBetween(0, 4)
-//         let name = 'enemy' + type
-//         super(game, name);
-//         this.setup()
-//     }
-//     setup() {
-//         this.speed = randomBetween(2, 5)
-//         this.x = randomBetween(0, 350)
-//         this.y = -randomBetween(0, 200)
-//     }
-//     update() {
-//         this.y += this.speed
-//         if (this.y > 600) {
-//             this.setup()
-//         }
-//     }
-// }
-
-// class Player extends CyjImage {
-//     constructor(game) {
-//         super(game, 'player', 0.5);
-//         this.setup()
-//
-//     }
-//     setup() {
-//         this.speed = 5
-//         this.cooldown = 0
-//     }
-//     update() {
-//         // this.speed = config.player_speed
-//         if (this.cooldown > 0) {
-//             this.cooldown--
-//         }
-//     }
-//     fire() {
-//         if (this.cooldown === 0) {
-//             this.cooldown = config.fire_cooldown
-//             let x = this.x + this.w / 2
-//             let y = this.y
-//             let b = Bullet.new(this.game)
-//             b.x = x
-//             b.y = y
-//             this.scene.addElement(b)
-//         }
-//     }
-//     moveLeft() {
-//         this.x -= this.speed
-//     }
-//     moveRight() {
-//         this.x += this.speed
-//     }
-//     moveUp() {
-//         this.y -= this.speed
-//     }
-//     moveDown() {
-//         this.y += this.speed
-//     }
-//     debug() {
-//         this.speed = config.player_speed
-//     }
-// }
-
-// class Cloud extends CyjImage {
-//     constructor(game) {
-//         super(game, 'cloud');
-//         this.setup()
-//     }
-//     setup() {
-//         this.speed = 1
-//         this.x = randomBetween(0, 350)
-//         this.y = -randomBetween(0, 200)
-//     }
-//     update() {
-//         this.y += this.speed
-//         if (this.y > 600) {
-//             this.setup()
-//         }
-//     }
-//     debug() {
-//         this.speed = config.cloud_speed
-//     }
-// }
 
 class Scene extends CyjScene {
     constructor(game) {
@@ -116,13 +14,14 @@ class Scene extends CyjScene {
         this.setUpInputs()
     }
     setup() {
+        this.duration = 50
         this.numberOfEnemies = 10
         this.bg = CyjImage.new(this.game, 'sky')
         this.cloud = Cloud.new(this.game, 'cloud')
 
         this.player = Player.new(this.game, 'player')
         this.player.x = 100
-        this.player.y = 150
+        this.player.y = 500
 
         this.addElement(this.bg)
         this.addElement(this.cloud)
@@ -131,11 +30,21 @@ class Scene extends CyjScene {
         //
         this.addEnemies()
         // add particles
-        let ps = CyjParticleSystem.new(this.game, 'particleSystem')
-        log(ps, 'ps')
-        this.addElement(ps)
+
+        // log(ps, 'ps')
+
+
+        // log(this, 'this')
     }
     addEnemies() {
+        // draw blocks
+        // for (let i = 0; i < blocks.length; i++) {
+        //     const block = blocks[i];
+        //     if (block.alive) {
+        //         game.drawImage(block)
+        //     }
+        // }
+
         let es = []
         for (let i = 0; i < this.numberOfEnemies; i++) {
             log('loop')
@@ -143,9 +52,10 @@ class Scene extends CyjScene {
             es.push(e)
             this.addElement(e)
         }
-        log(es, 'es')
+        // log(es, 'es')
         this.enemies = es
     }
+
     setUpInputs() {
         let g = this.game
         let s = this
@@ -168,6 +78,37 @@ class Scene extends CyjScene {
 
     update() {
         super.update()
-        // this.cloud.y += 1
+        // 子弹击中敌机
+        let bullet = this.player.b
+        if (bullet) {
+            log(1)
+            for (let i = 0; i < this.enemies.length; i++) {
+                const e = this.enemies[i];
+                if (e.collide(bullet)) {
+                    let ps = CyjParticleSystem.new(this.game, bullet.x, bullet.y)
+                    this.addElement(ps)
+                    e.kill()
+                }
+            }
+        }
+
+        // 撞机
+        for (let i = 0; i < this.enemies.length; i++) {
+            const e = this.enemies[i];
+            if (e.collide(this.player)) {
+                // log('撞机')
+                // block.kill()
+                // ball.反弹()
+                // score += 100
+            }
+        }
+
+        this.removeElement()
+
+        if (this.elements.length === 3) {
+            this.addEnemies()
+        }
+    log(this.elements, 'ele')
+
     }
 }

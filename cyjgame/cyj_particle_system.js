@@ -23,32 +23,33 @@ class CyjParticle extends CyjImage{
 }
 
 class CyjParticleSystem {
-    constructor(game) {
+    constructor(game, x, y) {
         this.game = game
+        this.x = x
+        this.y = y
         this.setup()
-
     }
 
-    static new(game) {
-        return new this(game)
+    static new(game, x, y) {
+        return new this(game, x, y)
     }
 
     setup() {
         this.duration = 50
-        this.x = 150
-        this.y = 200
+
         this.numberOfParticles = 50
         this.particles = []
     }
 
     draw() {
-        if (this.duration < 0) {
-            // todo, 临时方案
-            // 应该从 scene 中删除自己才对
-            return
-        }
+        // if (this.duration < 0) {
+        //     // todo, 临时方案
+        //     // 应该从 scene 中删除自己才对
+        //     return
+        // }
         for (const p of this.particles) {
             p.draw()
+            // log('draw')
         }
     }
 
