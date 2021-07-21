@@ -29,21 +29,8 @@ class Scene extends CyjScene {
         this.addElement(this.player)
         //
         this.addEnemies()
-        // add particles
-
-        // log(ps, 'ps')
-
-
-        // log(this, 'this')
     }
     addEnemies() {
-        // draw blocks
-        // for (let i = 0; i < blocks.length; i++) {
-        //     const block = blocks[i];
-        //     if (block.alive) {
-        //         game.drawImage(block)
-        //     }
-        // }
 
         let es = []
         for (let i = 0; i < this.numberOfEnemies; i++) {
@@ -80,14 +67,17 @@ class Scene extends CyjScene {
         super.update()
         // 子弹击中敌机
         let bullet = this.player.b
-        if (bullet) {
-            log(1)
+        let lastEle = Array.from(this.elements.slice(-1))
+        log(lastEle, 'lastEle')
+        if (lastEle[0].name === 'bullet') {
+            log(bullet, 'b')
             for (let i = 0; i < this.enemies.length; i++) {
                 const e = this.enemies[i];
                 if (e.collide(bullet)) {
                     let ps = CyjParticleSystem.new(this.game, bullet.x, bullet.y)
                     this.addElement(ps)
                     e.kill()
+                    bullet.life--
                 }
             }
         }

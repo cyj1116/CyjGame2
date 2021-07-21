@@ -28,6 +28,7 @@ class CyjParticleSystem {
         this.x = x
         this.y = y
         this.setup()
+
     }
 
     static new(game, x, y) {
@@ -36,7 +37,7 @@ class CyjParticleSystem {
 
     setup() {
         this.duration = 50
-
+        this.name = 'ParticleSystem'
         this.numberOfParticles = 50
         this.particles = []
     }

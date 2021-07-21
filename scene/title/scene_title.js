@@ -1,102 +1,28 @@
-class CyjLabel {
-    constructor(game, text) {
-        this.game = game
-        this.text = text
-    }
-    static new(game, text) {
-        return new this(game, text)
-    }
-    draw() {
-        this.game.context.fillText(this.text, 100, 200)
-    }
-    update() {
-
-    }
-}
-
 class SceneTitle extends CyjScene {
     constructor(game) {
         super(game)
         let label = CyjLabel.new(game, 'hello')
         this.addElement(label)
 
-        let ps = CyjParticleSystem.new(game)
-        this.addElement(ps)
+        // bg
+        let bg = CyjImage.new(game, 'sky')
+        this.addElement(bg)
+
+        let w = CyjAnimation.new(game)
+        w.x = 100
+        w.y = 400
+        this.w = w
+        this.addElement(w)
+
+        this.setupInputs()
+    }
+
+    setupInputs() {
+        this.game.registerAction('a', (keyStatus) => {
+            this.w.move(-2, keyStatus)
+        })
+        this.game.registerAction( 'd', (keyStatus) => {
+            this.w.move(2, keyStatus)
+        })
     }
 }
-
-// class CyjParticle extends CyjImage{
-//     constructor(game) {
-//         super(game, 'fire');
-//         this.setup()
-//     }
-//     setup() {
-//         this.life = 20
-//     }
-//     init(x, y, vx, vy) {
-//         this.x = x
-//         this.y = y
-//         this.vx = vx
-//         this.vy = vy
-//     }
-//     update() {
-//         this.life--
-//         this.x += this.vx
-//         this.y += this.vy
-//         let factor = 0.01
-//         this.v += factor * this.vx
-//         this.y += factor * this.vy
-//     }
-// }
-
-// class CyjParticleSystem {
-//     constructor(game) {
-//         this.game = game
-//         this.setup()
-//
-//     }
-//
-//     static new(game) {
-//         return new this(game)
-//     }
-//
-//     setup() {
-//         this.duration = 50
-//         this.x = 150
-//         this.y = 200
-//         this.numberOfParticles = 50
-//         this.particles = []
-//     }
-//
-//     draw() {
-//         if (this.duration < 0) {
-//             // todo, 临时方案
-//             // 应该从 scene 中删除自己才对
-//             return
-//         }
-//         for (const p of this.particles) {
-//             p.draw()
-//         }
-//     }
-//
-//     update() {
-//         this.duration--
-//
-//         // 添加小火花
-//         if (this.particles.length < this.numberOfParticles) {
-//             let p = CyjParticle.new(this.game)
-//             // 设置初始化坐标
-//             let speed = 2
-//             let vx = randomBetween(-speed, speed)
-//             let vy = randomBetween(-speed, speed)
-//             p.init(this.x, this.y, vx, vy)
-//             this.particles.push(p)
-//         }
-//         // 更新所有的小火花
-//         for (const p of this.particles) {
-//             p.update()
-//         }
-//         // 删除死掉的小火花
-//         this.particles = this.particles.filter(p => p.life > 0)
-//     }
-// }

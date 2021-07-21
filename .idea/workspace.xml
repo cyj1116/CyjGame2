@@ -2,20 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbcc7fdd-10aa-4c85-ac8c-9524a78db042" name="Default Changelist" comment="拆分代码">
-      <change afterPath="$PROJECT_DIR$/img/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cyjgame/cyj_animation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cyjgame/cyj_label.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Run/Warrior_Run_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Run/Warrior_Run_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Run/Warrior_Run_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Run/Warrior_Run_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Run/Warrior_Run_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Run/Warrior_Run_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Run/Warrior_Run_7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Run/Warrior_Run_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/idle/Warrior_Idle_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/idle/Warrior_Idle_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/idle/Warrior_Idle_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/idle/Warrior_Idle_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/idle/Warrior_Idle_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/idle/Warrior_Idle_6.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cyjgame/cyj_game.js" beforeDir="false" afterPath="$PROJECT_DIR$/cyjgame/cyj_game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cyjgame/cyj_particle_system.js" beforeDir="false" afterPath="$PROJECT_DIR$/cyjgame/cyj_particle_system.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyjgame/cyj_particle_system.js" beforeDir="false" afterPath="$PROJECT_DIR$/cyjgame/cyj_particle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cyjgame/cyj_scene.js" beforeDir="false" afterPath="$PROJECT_DIR$/cyjgame/cyj_scene.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cyjgame/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/cyjgame/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/enemy1.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/img/enemy1.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/enemy2.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/img/enemy2.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/player.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/player.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scene/main/bullet.js" beforeDir="false" afterPath="$PROJECT_DIR$/scene/main/bullet.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scene/main/enemy.js" beforeDir="false" afterPath="$PROJECT_DIR$/scene/main/enemy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scene/main/player.js" beforeDir="false" afterPath="$PROJECT_DIR$/scene/main/player.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scene/main/scene.js" beforeDir="false" afterPath="$PROJECT_DIR$/scene/main/scene.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scene/title/scene_title.js" beforeDir="false" afterPath="$PROJECT_DIR$/scene/title/scene_title.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +81,8 @@
       <workItem from="1626530983825" duration="368000" />
       <workItem from="1626593211338" duration="14589000" />
       <workItem from="1626617064148" duration="619000" />
-      <workItem from="1626675646936" duration="16471000" />
+      <workItem from="1626675646936" duration="19382000" />
+      <workItem from="1626862377221" duration="10616000" />
     </task>
     <task id="LOCAL-00001" summary="拆分代码">
       <created>1626677079657</created>

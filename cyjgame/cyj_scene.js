@@ -16,17 +16,26 @@ class CyjScene {
         // img.scene = this
         for (let i = 0; i < this.elements.length; i++) {
             const e = this.elements[i];
-            if (e.alive === false) {
+            if (e.alive === false && e.name === 'enemy') {
                 this.elements.splice(i, 1)
                 log('飞机')
 
-            } else if (e.duration < 0) {
+            } else if (e.duration < 0 && e.name === 'ParticleSystem') {
                 this.elements.splice(i, 1)
                 log('烟花')
-            } else if (e.y < 0 && e.speed === config.bullet_speed) {
+            } else if ((e.y < 0 || e.life < 1) && e.name === 'bullet') {
                 this.elements.splice(i, 1)
                 log('子弹')
+            }
+        }
+    }
 
+    removeBullet() {
+        for (let i = 0; i < this.elements.length; i++) {
+            const e = this.elements[i];
+            if (e.name === 'bullet') {
+                this.elements.splice(i, 1)
+                log('子弹')
             }
         }
     }

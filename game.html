@@ -17,7 +17,10 @@
     <script src="cyjgame/cyj_game.js"></script>
     <script src="cyjgame/cyj_scene.js"></script>
     <script src="cyjgame/cyj_image.js"></script>
-    <script src="cyjgame/cyj_particle_system.js"></script>
+    <script src="cyjgame/cyj_particle.js"></script>
+    <script src="cyjgame/cyj_label.js"></script>
+    <script src="cyjgame/cyj_animation.js"></script>
+
     <!--  场景文件  -->
     <script src="scene/main/cloud.js"></script>
     <script src="scene/main/enemy.js"></script>
@@ -93,17 +96,7 @@
     </div>
     <script src="main.js"></script>
     <script>
-        const es = sel => Array.from(document.querySelectorAll(sel))
 
-        const bindAll = (sel, eventName, callback) => {
-            let l = es(sel)
-            for (let i = 0; i < l.length; i++) {
-                const input = l[i];
-                input.addEventListener(eventName, (event) => {
-                    callback(event)
-                })
-            }
-        }
 
         bindAll('.cyj-auto-slider', 'input', (event) => {
             let target = event.target

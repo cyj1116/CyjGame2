@@ -51,12 +51,28 @@ const __main = () => {
         enemy3: 'img/enemy3.png',
         enemy4: 'img/enemy4.png',
         fire: 'img/fire.png',
+        // 跑步动画
+        run1: 'img/run/Warrior_Run_1.png',
+        run2: 'img/run/Warrior_Run_2.png',
+        run3: 'img/run/Warrior_Run_3.png',
+        run4: 'img/run/Warrior_Run_4.png',
+        run5: 'img/run/Warrior_Run_5.png',
+        run6: 'img/run/Warrior_Run_6.png',
+        run7: 'img/run/Warrior_Run_7.png',
+        run8: 'img/run/Warrior_Run_8.png',
+        // idle
+        idle1: 'img/idle/Warrior_Idle_1.png',
+        idle2: 'img/idle/Warrior_Idle_2.png',
+        idle3: 'img/idle/Warrior_Idle_3.png',
+        idle4: 'img/idle/Warrior_Idle_4.png',
+        idle5: 'img/idle/Warrior_Idle_5.png',
+        idle6: 'img/idle/Warrior_Idle_6.png',
     }
 
 
 const game = CyjGame.instance(60, images, (g) => {
-    let s = Scene.new(g)
-    // let s = SceneTitle.new(g)
+    // let s = Scene.new(g)
+    let s = SceneTitle.new(g)
     g.runWithScene(s)
 })
 

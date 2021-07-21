@@ -6,14 +6,25 @@ const log = console.log.bind(console, '---Log:')
 
 const e = sel => document.querySelector(sel)
 
+const es = sel => Array.from(document.querySelectorAll(sel))
+
 const imageFromPath = (path) => {
     const img = new Image()
     img.src = path
     return img
 }
 
-const imageByName = (name) => {
+const bindAll = (sel, eventName, callback) => {
+    let l = es(sel)
+    for (let i = 0; i < l.length; i++) {
+        const input = l[i];
+        input.addEventListener(eventName, (event) => {
+            callback(event)
+        })
+    }
+}
 
+const imageByName = (name) => {
 }
 
 // 矩形相交
@@ -38,3 +49,4 @@ const randomBetween = (start, end) => {
     let n = Math.random() * (end - start + 1)
     return Math.floor(n + start)
 }
+
