@@ -21,15 +21,9 @@ class Player extends CyjImage {
             let x = this.x + this.w / 2
             let y = this.y
             this.b = Bullet.new(this.game)
-            // log(b, 'b')
             this.b.x = x
             this.b.y = y
             this.scene.addElement(this.b)
-            // log(this.b, 'b')
-            // log(this.scene, 'this.scene')
-            // if (this.b.y === 0) {
-            //     this.scene.elements.removeElement(this.b)
-            // }
         }
     }
     moveLeft() {
