@@ -2,32 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbcc7fdd-10aa-4c85-ac8c-9524a78db042" name="Default Changelist" comment="拆分代码">
-      <change afterPath="$PROJECT_DIR$/cyjgame/cyj_animation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cyjgame/cyj_label.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Run/Warrior_Run_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Run/Warrior_Run_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Run/Warrior_Run_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Run/Warrior_Run_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Run/Warrior_Run_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Run/Warrior_Run_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Run/Warrior_Run_7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Run/Warrior_Run_8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/idle/Warrior_Idle_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/idle/Warrior_Idle_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/idle/Warrior_Idle_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/idle/Warrior_Idle_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/idle/Warrior_Idle_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/idle/Warrior_Idle_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/l.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cyjgame/cyj_game.js" beforeDir="false" afterPath="$PROJECT_DIR$/cyjgame/cyj_game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cyjgame/cyj_particle_system.js" beforeDir="false" afterPath="$PROJECT_DIR$/cyjgame/cyj_particle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cyjgame/cyj_scene.js" beforeDir="false" afterPath="$PROJECT_DIR$/cyjgame/cyj_scene.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cyjgame/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/cyjgame/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyjgame/cyj_animation.js" beforeDir="false" afterPath="$PROJECT_DIR$/cyjgame/cyj_animation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scene/main/bullet.js" beforeDir="false" afterPath="$PROJECT_DIR$/scene/main/bullet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scene/main/enemy.js" beforeDir="false" afterPath="$PROJECT_DIR$/scene/main/enemy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scene/main/scene.js" beforeDir="false" afterPath="$PROJECT_DIR$/scene/main/scene.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/1.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/scene/title/scene_title.js" beforeDir="false" afterPath="$PROJECT_DIR$/scene/title/scene_title.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CyjGame1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -83,6 +62,7 @@
       <workItem from="1626617064148" duration="619000" />
       <workItem from="1626675646936" duration="19382000" />
       <workItem from="1626862377221" duration="10616000" />
+      <workItem from="1627106833163" duration="193000" />
     </task>
     <task id="LOCAL-00001" summary="拆分代码">
       <created>1626677079657</created>
